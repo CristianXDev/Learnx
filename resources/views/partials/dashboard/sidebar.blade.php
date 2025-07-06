@@ -362,7 +362,6 @@
     </a>
   </li>
 
-
   <!-- Forms & Tables -->
   <li class="menu-header small text-uppercase"><span class="menu-header-text">Certificados</span></li>
   <!-- Forms -->
@@ -374,6 +373,16 @@
     </a>
   </li>
 
+  <!-- Forms & Tables -->
+  <li class="menu-header small text-uppercase"><span class="menu-header-text">Integraciones</span></li>
+  <!-- Forms -->
+  <li class="menu-item">
+    <a href="{{ route('api') }}" class="menu-link">
+      <i class="menu-icon tf-icons bx bx-code-alt"></i>
+      <div data-i18n="Form Elements">API</div>
+
+    </a>
+  </li>
 
 </ul>
 </aside>

@@ -23,6 +23,7 @@ use App\Http\Controllers\ClassroomJoinController;
 use App\Http\Controllers\EstadisticaController;
 use App\Http\Controllers\PdfDownloadController;
 use App\Http\Controllers\QuizCursoController;
+use App\Http\Controllers\ApiController;
 
 /*======================
 3. RUTAS SIN PROTECCIÓN
@@ -532,6 +533,19 @@ Route::post('/logout', [logoutController::class, 'logout'])->name('auth-logout')
     });
 
 });
+
+
+/*======================
+       API BETA
+=======================*/
+
+//API
+Route::get('/dashboard/api/', [ApiController::class, 'index'])->name('api');
+
+//API - REST
+Route::get('/dashboard/api/rest', [ApiController::class, 'rest'])->name('api-rest');
+
+
 
 /*======================
     RUTA DE ERRORES
